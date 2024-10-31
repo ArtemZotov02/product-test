@@ -1,0 +1,39 @@
+.colorComponents {
+  display: flex;
+  align-items: center;
+
+  &_title {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  &_colors {
+    display: flex;
+
+    &__border {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &.activeColor {
+        border: 1px solid var(--black);
+      }
+
+      &+.colorComponents_colors__border {
+        margin-left: 10px;
+      }
+
+      span {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--black);
+      }
+    }
+  }
+}

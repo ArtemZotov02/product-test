@@ -1,0 +1,23 @@
+.size {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+
+  &_title {
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  &_item {
+    cursor: pointer;
+
+    &+.size_item {
+      margin-left: 15px;
+    }
+
+    &.activeSize {
+      border-bottom: 1px solid var(--black);
+    }
+  }
+}

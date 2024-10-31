@@ -1,0 +1,43 @@
+//normalize
+@import "./normalize.scss";
+
+//variable
+@import "./variable";
+
+//fonts
+@import "./fonts";
+
+//mixins
+@import "./mixins";
+
+//Radix UI
+@import "@radix-ui/themes/styles.css";
+
+/*styles*/
+html{
+  overflow-x: hidden; 
+}
+
+
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size-standart;
+  line-height: $line-height;
+  color: var(--black);
+  min-width: 320px; 
+  margin: auto;
+  background-color: var(--whiteBg);
+}
+
+input,button,textarea{
+  font-family: $font-family;
+} 
+
+.container {
+  max-width: 1920px;
+  padding: 0 20px;
+  margin: 60px auto 0;
+  padding-bottom: 60px;
+}

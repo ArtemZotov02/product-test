@@ -1,0 +1,26 @@
+//Static
+$font-weight: 400;
+$font-size-standart: 16px;
+$font-size-l: 18px;
+$font-size-s: 14px;
+
+$line-height: 20px;
+$font-family: var(--Montserrat);
+//
+
+:root {
+    //fonts 
+    --Montserrat: 'Montserrat', sans-serif;
+    
+    //Bg colors
+    --blackBg : #000000;
+    --whiteBg: #ffffff;
+    --grayBg: #303030;
+
+    //colors 
+    --black : #000000;
+    --white: #ffffff;
+    --gray: #6f6f6f;
+    --gray10: #303030;
+
+}

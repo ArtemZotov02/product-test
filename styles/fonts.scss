@@ -1,0 +1,22 @@
+@mixin font($fontname, $filename, $fontweight, $fontstyle: normal) {
+  @font-face {
+    font-family: $fontname;
+    src: 
+          url(#{'../fonts/'+$filename+'.ttf'}) format("truetype");
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+    font-display: swap;
+  }
+}
+//Montserrat
+@include font('Montserrat', 'Montserrat-Bold', 700);
+@include font('Montserrat', 'Montserrat-SemiBold', 600);
+@include font('Montserrat', 'Montserrat-Medium', 500);
+@include font('Montserrat', 'Montserrat-Regular', 400);
+
+
+
+
+
+
+
